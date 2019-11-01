@@ -1,2 +1,2 @@
 # swpool
-Coroutine/mysql_pool/redis_pool
+SWOOLE/Coroutine/mysql_pool/redis_pool
