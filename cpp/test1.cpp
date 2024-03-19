@@ -5,7 +5,7 @@ using namespace std;
 
 int main( )
 {
-    // 基于当前系统的当前日期/时间
+    // 基于当前系统的当前日期/时间  1
     time_t now = time(0);
    
     // 把 now 转换为字符串形式
