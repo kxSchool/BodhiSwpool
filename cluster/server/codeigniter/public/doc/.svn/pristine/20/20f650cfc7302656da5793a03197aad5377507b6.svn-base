@@ -1,0 +1,55 @@
+---
+---
+### H5经典办公数据参数说明
+---
+```
+提交方式 : POST
+URL :    /xzlditu/buildingList.html
+例 :    http://m.ygoffice.com//xzlditu/buildingList.html
+```
+|  参数英文名称 |  参数中文名称 | 是否必须    | 类型  | 参数说明 |
+| ------------------ | ------------------- | ------------------- | ------------------ |----------------|
+|realname  | 企业名称 |  是  |  varchar |realname=上海耀光office|
+|organization_code | 组织机构代码 |  是  |  varchar |organization_code=	91310000797046224D|
+|trade  | 所属行业 |  是  |  varchar |trade=互联网|
+|shop_address  | 企业地址 |  是  |  varchar |shop_address=耀光office|
+|shop_contact  | 联系人姓名 |  是  |  varchar |shop_contact=何士乾|
+|contact_number  | 联系人手机 |  是  |  varchar |contact_number=13262713278|
+|yzm  | 验证码 |  是  |  varchar |yzm=ddvgd|
+
+#### 返回数据
+**正确**
+
+```
+{
+    "code": 200,
+    "msg": "成功",
+    "data": {
+       "memberid": "8004",
+        "staffid": "21",
+        "username": "admin",
+        "realname": "测试",
+        "type": "3",
+        "rolelist": "3,",
+        "isexamine": "1"
+    }
+}
+```
+
+######  出参说明
+
+|  参数英文名称 |  参数中文名称| 数据类型  |长度| 
+| ------------  | ------------- | ------------- | ------------- |
+| memberid | 商户号id | int  |11| 
+| realname | 企业名称 | varchar  |30|
+| organization_code | 组织机构代码  | varchar  |255|
+| type | 0:集团;1:办公楼运营商;2:物业公司;3:入驻企业;4:供应商;5:餐厅服务商;6:入驻员工,7:共享办公,默认9  | tinyint  |2|
+| userid | 商户号id | int  |11| 
+| shop_address | 企业地址 | varchar  |60|
+| shop_contact | 联系人姓名 | varchar  |60|
+| contact_number | 联系人手机 | varchar  |30|
+| rolelist | 角色id | varchar  |255|
+
+
+---
+---

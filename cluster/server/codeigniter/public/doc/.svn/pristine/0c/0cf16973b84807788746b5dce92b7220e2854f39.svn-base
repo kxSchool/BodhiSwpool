@@ -1,0 +1,47 @@
+---
+---
+### H5注册共享办公参数说明
+---
+```
+提交方式 : POST
+URL :    Login/register
+例 :    https://m.ygoffice.com/Login/register
+```
+|  参数英文名称 |  参数中文名称 | 是否必须    | 类型  | 参数说明 |
+| ------------------ | ------------------- | ------------------- | ------------------ |----------------|
+|brand  | 品牌 |  是  |  varchar |brand=test|
+|realname | 经营商名称 |  是  |  varchar |realname=测试|
+|shop_address  | 商铺的详细地址 |  是  | varchar |shop_address=上海|
+|shop_contact  | 联系人姓名 |  是  | varchar |shop_contact=小明|
+|contact_number  | 联系人手机 |  是  | varchar |contact_number=13262713278|
+|yzm  | 验证码 |  是  | varchar |yzm=1236|
+
+
+#### 返回数据
+**正确**
+
+```
+{
+    "code": 200,
+    "msg": "成功",
+    "data": {
+
+    }
+}
+```
+
+######  出参说明
+
+|  参数英文名称 |  参数中文名称| 数据类型  |长度| 
+| ------------  | ------------- | ------------- | ------------- |
+| memberid | 商户号id | int  |11| 
+| brand  | 品牌 | varchar  |255|
+|shop_address  | 商铺的详细地址 | varchar  |60|
+| userid | 商户号id | int  |11| 
+|shop_contact  | 联系人姓名 | varchar  |30|
+|contact_number  | 联系人手机 | varchar  |30|
+| realname |  经营商名称 | varchar  |255|
+
+
+---
+---
